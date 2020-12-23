@@ -1,4 +1,5 @@
-# Predicting Organic Food Purchases with Consumer Characteristics  
+# Organic Purchase Indicator
+## Looking For Grocery Shoppers Who Love Organics  
 ![intro](organic_intro.jpg)  
 
 ## Problem Definition
@@ -18,10 +19,10 @@ Of the 15,401 customers who received coupons, 4,383 actually ended up purchasing
 **Figure 1: Buys vs No Buys**  
 <img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925512-586cb780-e3bf-11ea-955a-2298a8fdc0c7.png">  
 
-Age contributes greatly to whether a customer will purchase organics. One might imagine that younger consumers are more likely to be health-conscious and in touch with environmental issues, and thus more likely to purchase organics. This suspicion is confirmed as we look at Figure 2. From this histogram we can see that in the age group of 20-45, a relatively high percentage of consumers purchased organics, with a steep drop-off at age 45. Organic purchase rates after age 45 are consistently low. The purchase rate disparity between these two groups is substantial: 56.88% of consumers under 45 purchased one of the newly introduced organic products while only 17.72% of those over 45 made a purchase.  
+Age contributes greatly to whether a customer will purchase organics. One might imagine that younger consumers are more likely to be health-conscious and in touch with environmental issues, and thus more likely to purchase organics. This suspicion is confirmed as we look at Figure 2. From this histogram we can see that in the age group of 20-45, a relatively high percentage of consumers purchased organics, with a steep drop-off at age 45. Organic purchase rates after age 45 are consistently low. The purchase rate disparity between these two groups is substantial: 56.88% of consumers under 45 purchased one of the newly introduced organic products while only 17.72% of those over 45 made a purchase.
 
-<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925802-ddf06780-e3bf-11ea-9b6a-70f07deb20b5.png">  
 **Figure 2:Purchasing Decisions Made Among Age Groups**  
+<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925802-ddf06780-e3bf-11ea-9b6a-70f07deb20b5.png">  
 
 Affluence, as measured on a logarithmic scale from 0-34 with 8 equating to median income, also seems to play a significant role in whether a consumer will purchase organic products. Presumably organics are slightly more expensive than their non-organic counterparts, leading more affluent consumers to purchase organics at a higher rate. We can see this visually in Figure 3, which shows that consumers with affluence levels above median income (10 or above) are much more likely to purchase organics than those with affluence levels at or below median income. 
 
