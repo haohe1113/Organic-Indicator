@@ -21,12 +21,12 @@ Of the 15,401 customers who received coupons, 4,383 actually ended up purchasing
 
 Age contributes greatly to whether a customer will purchase organics. One might imagine that younger consumers are more likely to be health-conscious and in touch with environmental issues, and thus more likely to purchase organics. This suspicion is confirmed as we look at Figure 2. From this histogram we can see that in the age group of 20-45, a relatively high percentage of consumers purchased organics, with a steep drop-off at age 45. Organic purchase rates after age 45 are consistently low. The purchase rate disparity between these two groups is substantial: 56.88% of consumers under 45 purchased one of the newly introduced organic products while only 17.72% of those over 45 made a purchase.
 
-**Figure 2:Purchasing Decisions Made Among Age Groups**  
+**Figure 2: Purchasing Decisions Made Among Age Groups**  
 <img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925802-ddf06780-e3bf-11ea-9b6a-70f07deb20b5.png">  
 
 Affluence, as measured on a logarithmic scale from 0-34 with 8 equating to median income, also seems to play a significant role in whether a consumer will purchase organic products. Presumably organics are slightly more expensive than their non-organic counterparts, leading more affluent consumers to purchase organics at a higher rate. We can see this visually in Figure 3, which shows that consumers with affluence levels above median income (10 or above) are much more likely to purchase organics than those with affluence levels at or below median income. 
 
-**Figure 3:Change in Purchases With Respect To Affluence Level**  
+**Figure 3: Change in Purchases With Respect To Affluence Level**  
 <img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925804-de88fe00-e3bf-11ea-97fa-c4f0f1c8659d.png">  
 
 Gender is also one of the key factors that appears to contribute to whether a consumer will purchase organics. As we can see in Figure 4, closed to 80% of organic buyers are females. When facing the option to purchase organics, a higher percentage of females as opposed to male consumers would be willing to purchase organic products. 
@@ -44,7 +44,7 @@ In our logistic regression model, we take into account all predictors, including
 
 We can quickly look at the coefficients of our logistic regression model. Although these coefficients are not easily interpretable after the data has been scaled, they can still be used as a crude basis for variable importance in the model’s prediction. This is shown visually in Figure 5. We can see that affluence, age, gender and loyalty status hold the most importance in our logistic regression model, respectively. 
 
-**Figure 5:Feature Importance From Logistic Regression**  
+**Figure 5: Feature Importance From Logistic Regression**  
 <img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925808-df219480-e3bf-11ea-88c9-85c34d9d988f.png">  
 
 ### K-Nearest Neighbors
@@ -57,7 +57,7 @@ KNN model: 80.047% accuracy when predicting on test data.
 
 This accuracy level makes a significant improvement upon the 71.541% accuracy that we would get from a simple heuristic rule.  
 
-**Figure 6:Cross-Validation For KNN**  
+**Figure 6: Cross-Validation For KNN**  
 <img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925809-df219480-e3bf-11ea-95f5-04b91d159c69.png">  
 
 With our chosen KNN model, we can look at the importance of each variable for prediction. This measure can be seen visually in Figure 7. As expected, age and affluence seem to play by far the largest role in whether a consumer will purchase organics, followed by loyalty card tenure (how long they have been a loyal customer), and gender.  
@@ -76,12 +76,12 @@ The disparity between in-sample and out-of-sample accuracy rate of the natural t
 
 From the pruned tree we can learn that age, affluence grade and gender are the three variables with main effects in classification trees (See Figure 9). We can observe that the variable importances are slightly different between KNN and decision trees, where loyalty card tenure shows more effect in prediction from KNN than from decision trees. One way we could explain the difference is that the algorithms for the variable importance measurements of the two models are different. For KNN we used permutation feature importance while for Tree Model we used CART Classification Feature Importance. 
 
-**Figure 9:Feature Importance From the Pruned Tree**  
+**Figure 9: Feature Importance From the Pruned Tree**  
 <img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925814-df219480-e3bf-11ea-9ff9-119a038d09d1.png">  
 
 We take a basic visual look of how the pruned tree model classifies customers by their features and predicts whether they will purchase organics or not. 
 
-**Figure 10:Decision Structure of the Pruned Tree**  
+**Figure 10: Decision Structure of the Pruned Tree**  
 <img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925817-e0eb5800-e3bf-11ea-87ed-efa3c8e09bcf.png">  
 
 ### Chosen Model  
@@ -96,7 +96,7 @@ We can see that all three models give a similar accuracy measure. However, given
 
 We can look at the confusion matrix of the KNN model’s predictions in Table 1. Of the 4,621 test set data points, 3,625 are classified correctly. Of the 996 misclassifications on the test data, 675 are false negatives (Type II error) while 321 are false positives (Type I error). In other words, the majority of the model’s mistakes are when it guesses a consumer will not purchase organic products when they actually do. 
 
-**Table 1:Confusion Matrix of Predictions Made By KNN**  
+**Table 1: Confusion Matrix of Predictions Made By KNN**  
 <img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90926662-87842880-e3c1-11ea-9dc4-cc07c1277df4.png">  
 
 ## Conclusion
@@ -106,51 +106,3 @@ There are some clear trends between certain customer demographics and propensity
 Although all three models produce slightly different weights of variable importance, they each have similar accuracy measures when predicting on test data. Of all the classification models evaluated, a k-nearest neighbors model with k=90 gives us the highest accuracy, at just over 80%. Age, affluence, and gender play particularly important roles in determining the likelihood that each consumer would make a purchase. 
 
 Given this information on which consumers might be more likely to purchase organic products, a grocery chain could more easily target coupons and advertisements to certain market segments. In the case of organic products, this grocery chain might put more advertising effort towards customers that tend to be younger, female, and more affluent.
-
-## Appendix
-	
-**Figure 1:**
-		<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925512-586cb780-e3bf-11ea-955a-2298a8fdc0c7.png">
-
-**Figure 2:**
-	<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925802-ddf06780-e3bf-11ea-9b6a-70f07deb20b5.png">
-
-**Figure 3:**
-	<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925804-de88fe00-e3bf-11ea-97fa-c4f0f1c8659d.png">
-
-**Figure 4:**
-	<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925805-de88fe00-e3bf-11ea-835c-82bc4017e8c8.png">
-
-**Figure 5:**
-	<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925808-df219480-e3bf-11ea-88c9-85c34d9d988f.png">
-
-**Figure 6:**
-	<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925809-df219480-e3bf-11ea-95f5-04b91d159c69.png">
-
-**Figure 7:**
-	<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925811-df219480-e3bf-11ea-9a22-5b641f027507.png">
-
-**Figure 8:**
-	<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925812-df219480-e3bf-11ea-8ec7-bcceb8ee0f11.png">
-
-**Figure 9:**
-	<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925814-df219480-e3bf-11ea-9ff9-119a038d09d1.png">
-
-**Figure 10:**
-	<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925817-e0eb5800-e3bf-11ea-87ed-efa3c8e09bcf.png">
-
-**Table 1:**
-	<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90926662-87842880-e3c1-11ea-9dc4-cc07c1277df4.png">
-
-
-
-
-
-
-
-
-
-
-
-
-
