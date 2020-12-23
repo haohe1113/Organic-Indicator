@@ -1,4 +1,5 @@
-# Predicting Organic Food Purchases with Consumer Characteristics
+# Predicting Organic Food Purchases with Consumer Characteristics  
+![intro](organic_intro.jpg)  
 
 ## Problem Definition
 
