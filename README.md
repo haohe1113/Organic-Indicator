@@ -16,6 +16,7 @@ In this analysis we investigate notable trends between customer demographics and
 Of the 15,401 customers who received coupons, 4,383 actually ended up purchasing an organic product from the newly introduced line. This gives an overall purchase rate of 28.459%. However, this purchase rate is very much demographic dependent. We can first explore some of the basic relationships between some of the predictors in the data and the propensity to purchase organic products. 
 
 <img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925512-586cb780-e3bf-11ea-955a-2298a8fdc0c7.png">  
+
 **Figure 1: Buys vs No Buys**  
 
 Age contributes greatly to whether a customer will purchase organics. One might imagine that younger consumers are more likely to be health-conscious and in touch with environmental issues, and thus more likely to purchase organics. This suspicion is confirmed as we look at Figure 2. From this histogram we can see that in the age group of 20-45, a relatively high percentage of consumers purchased organics, with a steep drop-off at age 45. Organic purchase rates after age 45 are consistently low. The purchase rate disparity between these two groups is substantial: 56.88% of consumers under 45 purchased one of the newly introduced organic products while only 17.72% of those over 45 made a purchase.  
@@ -26,6 +27,7 @@ Age contributes greatly to whether a customer will purchase organics. One might 
 Affluence, as measured on a logarithmic scale from 0-34 with 8 equating to median income, also seems to play a significant role in whether a consumer will purchase organic products. Presumably organics are slightly more expensive than their non-organic counterparts, leading more affluent consumers to purchase organics at a higher rate. We can see this visually in Figure 3, which shows that consumers with affluence levels above median income (10 or above) are much more likely to purchase organics than those with affluence levels at or below median income. 
 
 <img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925804-de88fe00-e3bf-11ea-97fa-c4f0f1c8659d.png">  
+
 **Figure 3:Change in Purchases With Respect To Affluence Level**  
 
 Gender is also one of the key factors that appears to contribute to whether a consumer will purchase organics. As we can see in Figure 4, closed to 80% of organic buyers are females. When facing the option to purchase organics, a higher percentage of females as opposed to male consumers would be willing to purchase organic products.  
