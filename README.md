@@ -15,9 +15,8 @@ In this analysis we investigate notable trends between customer demographics and
 
 Of the 15,401 customers who received coupons, 4,383 actually ended up purchasing an organic product from the newly introduced line. This gives an overall purchase rate of 28.459%. However, this purchase rate is very much demographic dependent. We can first explore some of the basic relationships between some of the predictors in the data and the propensity to purchase organic products. 
 
-<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925512-586cb780-e3bf-11ea-955a-2298a8fdc0c7.png">  
-
 **Figure 1: Buys vs No Buys**  
+<img width="750" alt="twitter_summary" src="https://user-images.githubusercontent.com/47257479/90925512-586cb780-e3bf-11ea-955a-2298a8fdc0c7.png">  
 
 Age contributes greatly to whether a customer will purchase organics. One might imagine that younger consumers are more likely to be health-conscious and in touch with environmental issues, and thus more likely to purchase organics. This suspicion is confirmed as we look at Figure 2. From this histogram we can see that in the age group of 20-45, a relatively high percentage of consumers purchased organics, with a steep drop-off at age 45. Organic purchase rates after age 45 are consistently low. The purchase rate disparity between these two groups is substantial: 56.88% of consumers under 45 purchased one of the newly introduced organic products while only 17.72% of those over 45 made a purchase.  
 
