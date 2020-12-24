@@ -1,5 +1,5 @@
 # Organic Purchase Indicator
-## Looking For Grocery Shoppers Who Love Organics  
+## Looking For Grocery Shoppers Who Love Organics   
 ![intro](organic_intro.jpg)  
 
 ## Problem Definition
